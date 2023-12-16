@@ -5,5 +5,14 @@ const infosPessoa = {
     senha: "melhorDeTodos"
 }
 
-const valoresMaiusculos = infosPessoa.map();
-console.log(valoresMaiusculos);
+let maiusculas = Object.keys(infosPessoa).map(e => e = e.toUpperCase());
+
+console.log(infosPessoa)
+console.log(maiusculas);
+
+const valores = Object.keys(infosPessoa).map((prop, valor) => {
+    console.log(`O valor da propriedade ${prop} é ${valor}.`);
+    return (`O valor da propriedade ${prop} é ${valor}.`);
+})
+
+console.log(valores)
